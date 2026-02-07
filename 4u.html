@@ -570,11 +570,11 @@ let diaryEntriesArr = [];
 let currentIndex = 0;
 
 function openDiary(){
-  let author = prompt("Kaun diary likh raha hai? Tanush / Dimple 💖").trim();
-  if(author !== "Tanush" && author !== "Dimple"){ alert("Sirf Tanush ya Dimple hi likh sakte hain 💌"); return; }
+  let author = prompt("Kaun diary likh raha hai? hisname/hername 💖").trim();
+  if(author !== "her" && author !== "his"){ alert("Sirf wo hi likh sakte hain 💌"); return; }
 
   let p = prompt("Diary password 💖");
-  if(p !== "dimple"){ alert("Wrong password ❌"); return; }
+  if(p !== "123456"){ alert("Wrong password ❌"); return; }
 
   diaryPageEl.style.display = "flex";
   setTimeout(()=> diaryPageEl.classList.add("pageOpen"), 50);
@@ -599,7 +599,7 @@ function saveDiary(){
 
 function pushDiaryEntry(text, photo){
   let d = new Date().toDateString();
-  let author = prompt("Enter Author Again (Tanush/Dimple) 💖") || "Unknown";
+  let author = prompt("Enter Author Again (her/his) 💖") || "Unknown";
   let diary = JSON.parse(localStorage.getItem("diary") || "[]");
   diary.unshift({date:d, author, text, photo});
   localStorage.setItem("diary", JSON.stringify(diary));
@@ -660,6 +660,7 @@ oldEntriesEl.ontouchend = (e)=>{
 </body>
 
 </html>
+
 
 
 
