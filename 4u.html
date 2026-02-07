@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Only For you ❤️</title>
+<title>Only For (name) ❤️</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -307,55 +307,11 @@ button{
   background:#ffe4f0;
 }
 /* 🔥 3D IMAGE GALLERY */
-.gallery3d-wrapper{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin-top:6vw;
-}
+  
 
-.box3d{
-  position: relative;
-  width: 220px;
-  height: 300px;
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-  animation: rotate3d 60s linear infinite;
-}
-
-.box3d:hover{
-  animation-play-state: paused;
-}
-
-@keyframes rotate3d {
-  0%{
-    transform: perspective(1000px) rotateY(0deg);
-  }
-  100%{
-    transform: perspective(1000px) rotateY(360deg);
-  }
-}
-
-.box3d span{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  transform-style:preserve-3d;
-  transform: rotateY(calc(var(--i) * 36deg)) translateZ(300px);
-}
-
-.box3d span img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:15px;
-  box-shadow:0 15px 30px rgba(0,0,0,0.6);
-}  
+  
 </style>
-</head>
-
+</head/>
 <body>
 
 <audio id="bgm" loop>
@@ -376,7 +332,7 @@ button{
 
 <!-- ANNIVERSARY -->
 <div class="card">
-<h2>Happy Valentine babes ❤️</h2>
+<h2>Happy Anniversary (name) ❤️</h2>
 <div class="paw" onclick="openSecret()">🐾</div>
 <p>
 <b>1 December 2024</b> — jab sab kuch special bana ✨<br><br>
@@ -387,7 +343,12 @@ button{
 <button onclick="window.location.href='flower.html'">
 🌸
 </button>
-
+<h4> 
+  <button onclick="window.location.href='game.html'">
+🎮
+</button>
+</h4>
+  
 <!-- COUNTER -->
 <div class="card">
 <h2>⏳ Time Since We Fell in Love ⏳</h2>
@@ -410,29 +371,12 @@ button{
 </div>
 </div>
 <!-- 💫 3D MEMORY GALLERY -->
-<div class="card">
-  <h2>💫 3D Memory Gallery 💫</h2>
-
-  <div class="gallery3d-wrapper">
-    <div class="box3d">
-      <span style="--i:1"><img src="1.jpg"></span>
-      <span style="--i:2"><img src="2.jpg"></span>
-      <span style="--i:3"><img src="3.jpg"></span>
-      <span style="--i:4"><img src="4.jpg"></span>
-      <span style="--i:5"><img src="5.jpg"></span>
-      <span style="--i:6"><img src="6.jpg"></span>
-      <span style="--i:7"><img src="7.jpg"></span>
-      <span style="--i:8"><img src="8.jpg"></span>
-      <span style="--i:9"><img src="9.jpg"></span>
-      <span style="--i:10"><img src="10.jpg"></span>
-    </div>
-  </div>
-</div>
+<!-- 📱 SWIPE MEMORY GALLERY -->
 
 <!-- PROMISE -->
 <div class="card">
 <h2>💍 My Promise 💍</h2>
-<p>, main hamesha tumhare liye wahan rahunga, kyunki tum meri duniya ho ❤️</p>
+<p>Main kabhi door nahi jaunga.<br>Har pal tumhare saath. Main promise karta hoon ki hamesha tumhare saath rahunga, tumhe har mushkil mein support dunga, tumhari har baat dhyan se sununga, aur tumhe poore dil se aur sachche pyar se chahunga. Jo bhi ho, main hamesha tumhare liye wahan rahunga, kyunki tum meri duniya ho ❤️</p>
 </div>
 
 <!-- FUTURE -->
@@ -440,7 +384,7 @@ button{
 <h2>💌 Future Message 💌</h2>
 <p>
 Agar future me tum ye padh rahi ho,<br>
-toh yaad rakhna — main abhi bhi wahi hoon jb hum mile the
+toh yaad rakhna — main abhi bhi wahi hoon jb hum mile the aur mene pucha tha r u editor? me na badla hu aur na badlunga tumhare lliye mera pyaar humesa tumhara hai 💖
 </p>
 </div>
 
@@ -450,7 +394,7 @@ toh yaad rakhna — main abhi bhi wahi hoon jb hum mile the
 <p>Tum meri zindagi ka sabse khoobsurat hissa ho  jise me kabhi dur nhi jana jata ❤️</p>
 </div>
 
-<h2>Forever Yours,<br>name❤️</h2>
+<h2>Forever Yours,<br>(name) ❤️</h2>
 </div>
 </div>
 
@@ -494,14 +438,14 @@ function toggleMusic(){music.paused?music.play():music.pause();}
 // Unlock
 function unlock(){
  let a=document.getElementById("answer").value.toLowerCase().trim();
- if(a==="01/12/2024"||a==="1 december 24"){
+ if(a==="123456"||a==="123456"){
    document.getElementById("content").style.display="block";
    music.play();
    startSlideshow();
    startCounter();
    hearts();
    stars();
- }else alert("Sirf Dimple jaanti hai 😉");
+ }else alert("Sirf (name) jaanti hai 😉");
 }
 
 // Slideshow
@@ -573,7 +517,7 @@ birthdayCountdown();
 
 /* 💖 LOVE DAYS SYSTEM */
 const loveDays = {
- "02-07": ["🌹 Rose Day", "Aaj Rose Day hai 🌹\nJaise rose special hota hai, waise hi tum ❤️"],
+ "02-07": ["🌹 Rose Day", "Aaj Rose Day hai 🌹\nJaise rose special hota hai, waise hi tum mana mene ladai ki tumse but i promised kabhi nhi krunga tumhe dukhi tum humesa ek rose ki trh khilti rhao❤️"],
  "02-08": ["💍 Propose Day", "Aaj Propose Day 💍\nMain roz tumhe choose karta hoon ❤️"],
  "02-09": ["🍫 Chocolate Day", "Chocolate sweet hoti hai 🍫\nPar tum usse bhi zyada ❤️"],
  "02-10": ["🧸 Teddy Day", "Aaj Teddy Day 🧸\nTum mera comfort ho ❤️"],
@@ -711,12 +655,16 @@ oldEntriesEl.ontouchend = (e)=>{
   else if(endX > startX + 50){ if(currentIndex>0){ currentIndex--; updateActiveEntry(); } }
 };
 
-
 </script>
 
 </body>
 
 </html>
+
+
+
+
+
 
 
 
