@@ -324,9 +324,7 @@ button{
 <h1>Hey ❤️</h1>
 <p>Ye website normal nahi… ye meri feelings hai 🌙</p>
 
-<p><b>Question:</b> Hum pehli baar kab mile the?</p>
-<input id="answer" type="password" placeholder="Enter password 💖">
-<button onclick="unlock()">Enter 💖</button>
+
 
 <div id="content" style="display:none">
 
@@ -435,17 +433,7 @@ toh yaad rakhna — main abhi bhi wahi hoon jb hum mile the aur mene pucha tha r
 let music=document.getElementById("bgm");
 function toggleMusic(){music.paused?music.play():music.pause();}
 
-// Unlock
-function unlock(){
- let a=document.getElementById("answer").value.toLowerCase().trim();
- if(a==="123456"||a==="123456"){
-   document.getElementById("content").style.display="block";
-   music.play();
-   startSlideshow();
-   startCounter();
-   hearts();
-   stars();
- }else alert("Sirf (name) jaanti hai 😉");
+
 }
 
 // Slideshow
@@ -660,6 +648,7 @@ oldEntriesEl.ontouchend = (e)=>{
 </body>
 
 </html>
+
 
 
 
